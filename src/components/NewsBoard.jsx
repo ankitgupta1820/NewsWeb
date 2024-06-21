@@ -17,7 +17,7 @@ const NewsBoard = ({category}) => {
       </h2>
 
 
-      {articles.map((news,index)=>{
+      {articles && articles.map((news,index)=>{
         return <NewsItem key={index}  title={news.title} description={news.description} src={news.urlToImage} url={news.url}/>
 
       })}
